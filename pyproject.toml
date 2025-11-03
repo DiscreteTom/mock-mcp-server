@@ -16,3 +16,8 @@ mock-mcp-server = "mock_mcp_server.main:main"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0",
+]
+
