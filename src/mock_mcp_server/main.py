@@ -1,5 +1,6 @@
 import typer
 from fastmcp import FastMCP
+from fastmcp.server.server import Transport
 from typing_extensions import Annotated
 from typing import Optional
 
@@ -15,15 +16,21 @@ def version_callback(value: bool):
 
 
 def app(
-    host: Annotated[str, typer.Option(help="Host to bind to")] = "localhost",
+    transport: Annotated[Transport, typer.Option(help="Transport type")] = "stdio",
+    host: Annotated[str, typer.Option(help="Host to bind to")] = "127.0.0.1",
     port: Annotated[int, typer.Option(help="Port to bind to")] = 8000,
     _version: Annotated[
         Optional[bool],
-        typer.Option("--version", callback=version_callback, help="Show version and exit"),
+        typer.Option(
+            "--version", callback=version_callback, help="Show version and exit"
+        ),
     ] = None,
 ):
     """Mock MCP Server for testing."""
-    mcp.run()
+    if transport == "stdio":
+        mcp.run()
+    else:
+        mcp.run(transport=transport, host=host, port=port)
 
 
 @mcp.tool
