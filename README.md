@@ -19,13 +19,13 @@ Support tools, prompts and resources.
 
  Mock MCP Server for testing.
 
-╭─ Options ───────────────────────────────────────────────────────────────────────────────────╮
-│ --transport        [stdio|http|sse|streamable-http]  Transport type [default: stdio]        │
-│ --host             TEXT                              Host to bind to [default: 127.0.0.1]   │
-│ --port             INTEGER                           Port to bind to [default: 8000]        │
-│ --version                                            Show version and exit                  │
-│ --help                                               Show this message and exit.            │
-╰─────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ───────────────────────────────────────────────────────────────────────────╮
+│ --transport  [stdio|http|sse|streamable-http]  Transport type [default: stdio]      │
+│ --host       TEXT                              Host to bind to [default: 127.0.0.1] │
+│ --port       INTEGER                           Port to bind to [default: 8000]      │
+│ --version                                      Show version and exit                │
+│ --help                                         Show this message and exit.          │
+╰─────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 </details>
