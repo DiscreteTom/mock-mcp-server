@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2025-11-03
+
 ### Changed
 
 - Lowered Python version requirement from >=3.13 to >=3.10
@@ -22,5 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions workflow for PyPI publishing
 - Project metadata and packaging configuration
 
-[unreleased]: https://github.com/DiscreteTom/mock-mcp-server/compare/v0.1.0...HEAD
+[unreleased]: https://github.com/DiscreteTom/mock-mcp-server/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/DiscreteTom/mock-mcp-server/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/DiscreteTom/mock-mcp-server/releases/tag/v0.1.0
