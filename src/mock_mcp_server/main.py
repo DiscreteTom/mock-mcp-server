@@ -5,7 +5,7 @@ from typing import Optional
 
 from . import __version__
 
-mcp = FastMCP("My MCP Server")
+mcp = FastMCP("Mock MCP Server")
 
 
 def version_callback(value: bool):
@@ -27,20 +27,21 @@ def app(
 
 
 @mcp.tool
-def greet(name: str) -> str:
-    return f"Hello, {name}!"
+def mock_echo(message: str) -> str:
+    """Echo back the provided message."""
+    return f"Mock server echoes: {message}"
 
 
-@mcp.resource("resource://greeting")
-def get_greeting() -> str:
-    """Provides a simple greeting message."""
-    return "Hello from FastMCP Resources!"
+@mcp.resource("resource://mock-data")
+def get_mock_data() -> str:
+    """Provides mock data for testing."""
+    return "This is mock data from the test server."
 
 
 @mcp.prompt
-def ask_about_topic(topic: str) -> str:
-    """Generates a user message asking for an explanation of a topic."""
-    return f"Can you please explain the concept of '{topic}'?"
+def mock_prompt(topic: str) -> str:
+    """Generates a mock prompt for testing purposes."""
+    return f"This is a mock prompt about '{topic}' for testing the MCP server."
 
 
 def main():
