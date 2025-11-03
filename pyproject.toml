@@ -1,0 +1,14 @@
+[project]
+name = "mock-mcp-server"
+version = "0.1.0"
+description = "A mock mcp server for test."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=2.13.0.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
