@@ -34,13 +34,13 @@ Support tools, prompts and resources.
 
 Add to your MCP client configuration:
 
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock&config=eyJjb21tYW5kIjoidXZ4IG1vY2stbWNwLXNlcnZlciJ9)
-[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock&config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22mock-mcp-server%22%5D%7D)
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock-stdio&config=eyJjb21tYW5kIjoidXZ4IG1vY2stbWNwLXNlcnZlciJ9)
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock-stdio&config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22mock-mcp-server%22%5D%7D)
 
 ```json
 {
   "mcpServers": {
-    "mock": {
+    "mock-stdio": {
       "command": "uvx",
       "args": ["mock-mcp-server"]
     }
@@ -58,13 +58,13 @@ uvx mock-mcp-server --transport http --host 127.0.0.1 --port 8000
 
 Then configure your MCP client:
 
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock&config=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAifQ%3D%3D)
-[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock&config=%7B%22url%22%3A%22http%3A%2F%2F127.0.0.1%3A8000%22%7D)
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock-streamable-http&config=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAifQ%3D%3D)
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock-streamable-http&config=%7B%22url%22%3A%22http%3A%2F%2F127.0.0.1%3A8000%22%7D)
 
 ```json
 {
   "mcpServers": {
-    "mock": {
+    "mock-streamable-http": {
       "url": "http://127.0.0.1:8000"
     }
   }
@@ -81,13 +81,13 @@ uvx mock-mcp-server --transport sse --host 127.0.0.1 --port 8000
 
 Then configure your MCP client:
 
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock&config=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAifQ%3D%3D)
-[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock&config=%7B%22url%22%3A%22http%3A%2F%2F127.0.0.1%3A8000%22%7D)
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock-sse&config=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAifQ%3D%3D)
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock-sse&config=%7B%22url%22%3A%22http%3A%2F%2F127.0.0.1%3A8000%22%7D)
 
 ```json
 {
   "mcpServers": {
-    "mock": {
+    "mock-sse": {
       "url": "http://127.0.0.1:8000"
     }
   }
