@@ -58,14 +58,14 @@ uvx mock-mcp-server --transport http --host 127.0.0.1 --port 7788
 
 Then configure your MCP client:
 
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock-streamable-http&config=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAifQ%3D%3D)
-[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock-streamable-http&config=%7B%22url%22%3A%22http%3A%2F%2F127.0.0.1%3A7788%22%7D)
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock-streamable-http&config=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjc3ODgvbWNwIn0%3D)
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock-streamable-http&config=%7B%22url%22%3A%22http%3A%2F%2F127.0.0.1%3A7788%2Fmcp%22%7D)
 
 ```json
 {
   "mcpServers": {
     "mock-streamable-http": {
-      "url": "http://127.0.0.1:7788"
+      "url": "http://127.0.0.1:7788/mcp"
     }
   }
 }
@@ -81,14 +81,14 @@ uvx mock-mcp-server --transport sse --host 127.0.0.1 --port 7789
 
 Then configure your MCP client:
 
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock-sse&config=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAifQ%3D%3D)
-[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock-sse&config=%7B%22url%22%3A%22http%3A%2F%2F127.0.0.1%3A7789%22%7D)
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=mock-sse&config=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjc3ODkvc3NlIn0%3D)
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](kiro://kiro.mcp/add?name=mock-sse&config=%7B%22url%22%3A%22http%3A%2F%2F127.0.0.1%3A7789%2Fsse%22%7D)
 
 ```json
 {
   "mcpServers": {
     "mock-sse": {
-      "url": "http://127.0.0.1:7789"
+      "url": "http://127.0.0.1:7789/sse"
     }
   }
 }
