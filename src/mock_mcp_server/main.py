@@ -20,5 +20,9 @@ def ask_about_topic(topic: str) -> str:
     return f"Can you please explain the concept of '{topic}'?"
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()
