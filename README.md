@@ -8,7 +8,7 @@ Support tools, prompts and resources.
 
 ## Usage
 
-### Full Usage
+### Full CLI Usage
 
 <details>
 
