@@ -6,6 +6,10 @@ A mock MCP server for testing MCP client implementations and development workflo
 
 Support tools, prompts and resources.
 
+<a href="https://glama.ai/mcp/servers/@DiscreteTom/mock-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@DiscreteTom/mock-mcp-server/badge" alt="Mock Server MCP server" />
+</a>
+
 ## Usage
 
 ### Full CLI Usage
